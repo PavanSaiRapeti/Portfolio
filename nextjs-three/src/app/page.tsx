@@ -7,7 +7,7 @@ import { TextureLoader, MeshStandardMaterial, AdditiveBlending, Mesh, Object3D }
 
 function Model() {
   const gltf = useLoader(GLTFLoader, '/ccTV.glb');
-  const texture = useLoader(TextureLoader, '/woodDif.jpg'); // Update the path to your texture
+  const texture = useLoader(TextureLoader, '/woodDif.jpg'); 
 
   gltf.scene.traverse((child: Object3D) => {
     if ((child as Mesh).isMesh) {
