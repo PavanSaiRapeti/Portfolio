@@ -13,7 +13,7 @@ function Model() {
     if ((child as Mesh).isMesh) {
       const mesh = child as Mesh;
       mesh.material = new MeshStandardMaterial({
-        map: texture, // Apply the texture to the material
+        map: texture, 
         color: (mesh.material as MeshStandardMaterial).color,
         blending: AdditiveBlending,
         transparent: true,
